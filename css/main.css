@@ -1,0 +1,77 @@
+/* 🔹 Fondo general futurista */
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #e0f7ff;
+}
+
+/* 🔹 Navbar más elegante */
+.navbar {
+  background: linear-gradient(90deg, #0f2027, #2c5364);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.navbar-brand {
+  color: #00eaff !important;
+  text-shadow: 0 0 10px #00eaff;
+}
+
+/* 🔹 Card estilo glass + glow */
+.card {
+  border-radius: 1.2rem;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+}
+
+/* 🔹 Header de card */
+.card-header {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px rgba(255,255,255,0.5);
+}
+
+/* 🔹 Canvas container */
+#canvas-container {
+  background: radial-gradient(circle at center, #000814, #001d3d);
+  border-top: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+/* 🔹 Footer elegante */
+footer {
+  background: linear-gradient(90deg, #0f2027, #2c5364);
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+/* 🔹 Glow en texto */
+footer strong {
+  color: #00eaff;
+  text-shadow: 0 0 8px #00eaff;
+}
+
+/* 🔹 Canvas responsive */
+#canvas-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+/* 🔥 EFECTO HOVER PRO */
+.card:hover {
+  transform: scale(1.01);
+  transition: 0.3s;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.3);
+}
+
+/* 🔹 Scroll bonito */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #00eaff;
+  border-radius: 10px;
+}

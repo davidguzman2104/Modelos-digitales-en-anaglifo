@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visor 3D Anaglifo Mixamo</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="text-light d-flex flex-column min-vh-100">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
+        🔷 Visor 3D Anaglifo
+      </a>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="container my-4 flex-grow-1">
+
+    <!-- Encabezado -->
+    <section class="text-center mb-4">
+      <h1 class="fw-bold display-6">Visualización 3D con efecto anaglifo</h1>
+      <p class="text-info mb-0">
+        Usa lentes rojo/cian para disfrutar correctamente la experiencia tridimensional.
+      </p>
+    </section>
+
+    <!-- Tarjeta principal -->
+    <div class="card text-light shadow-lg">
+      <div class="card-header text-center fs-5 fw-semibold">
+        Modelo 3D de Mixamo integrado con Three.js
+      </div>
+
+      <div class="card-body p-0 position-relative" id="canvas-container" style="height: 600px;">
+        <!-- Aquí se inyectará el canvas 3D desde main.js -->
+      </div>
+    </div>
+
+    <!-- Controles -->
+    <section class="row mt-4 g-3">
+
+      <div class="col-md-4">
+        <div class="card h-100 text-light p-3">
+          <h5 class="text-info">🖱 Rotación</h5>
+          <p class="mb-0">Haz clic y arrastra el mouse para girar el modelo 3D.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 text-light p-3">
+          <h5 class="text-info">🔍 Zoom</h5>
+          <p class="mb-0">Usa la rueda del mouse para acercar o alejar la cámara.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 text-light p-3">
+          <h5 class="text-info">👓 Anaglifo</h5>
+          <p class="mb-0">Colócate lentes rojo/cian para percibir el efecto 3D.</p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-light py-3 mt-auto shadow">
+    <p class="mb-0">
+      Desarrollado por <strong>DAVID FIDEL GUZMÁN SÁNCHEZ</strong> © 2026
+    </p>
+    <small>Instituto Tecnológico de Pachuca | Proyecto de Visualización 3D</small>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Importmap Three.js -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "./build/three.module.js",
+        "three/addons/": "./jsm/"
+      }
+    }
+  </script>
+
+  <!-- Script principal -->
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
